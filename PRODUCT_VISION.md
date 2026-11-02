@@ -1,6 +1,6 @@
 PRODUCT VISION – PHẦN MỀM QUẢN LÝ THỜI KHÓA BIỂU
 
-1. Tầm nhìn sản phẩm
+1. Tầm nhìn của sản phẩm
 
 Xây dựng phần mềm quản lý thời khóa biểu hiện đại, tiện lợi và dễ sử dụng, giúp sinh viên và giáo viên dễ dàng tạo, xem, chỉnh sửa và quản lý lịch học, lịch dạy. Phần mềm hướng đến việc hạn chế tình trạng trùng lịch, tiết kiệm thời gian và nâng cao hiệu quả học tập, giảng dạy.
 
