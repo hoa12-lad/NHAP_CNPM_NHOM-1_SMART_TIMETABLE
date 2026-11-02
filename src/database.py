@@ -1,11 +1,33 @@
 import sqlite3
 
-def init_db():
-    # Kết nối đến cơ sở dữ liệu (tự động tạo file smart_timetable.db nếu chưa có)
+def connect_db():
+    """Tạo kết nối đến cơ sở dữ liệu SQLite."""
     conn = sqlite3.connect("smart_timetable.db")
+    return conn
+
+def init_db():
+    """Khởi tạo các bảng dữ liệu cần thiết cho hệ thống."""
+    conn = connect_db()
     cursor = conn.cursor()
     
-    # 1. Bảng tài khoản (phục vụ cho account.py)
+    # Tạo bảng subjects (Môn học)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS subjects (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            credits INTEGER NOT NULL
+        )
+    """)
+    
+    # Tạo bảng classes (Lớp học)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS classes (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            class_name TEXT NOT NULL
+        )
+    """)
+
+    # Tạo bảng accounts (Tài khoản)
     cursor.execute("""
         CREATE TABLE IF NOT EXISTS accounts (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -14,31 +36,9 @@ def init_db():
         )
     """)
     
-    # 2. Bảng môn học và lớp học (phục vụ cho subject.py)
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS subjects (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            subject_name TEXT NOT NULL,
-            class_name TEXT NOT NULL
-        )
-    """)
-    
-    # 3. Bảng thời khóa biểu (phục vụ cho timetable.py và schedule.py)
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS timetables (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            subject_id INTEGER,
-            day_of_week TEXT NOT NULL,
-            start_time TEXT NOT NULL,
-            end_time TEXT NOT NULL,
-            room TEXT NOT NULL,
-            FOREIGN KEY (subject_id) REFERENCES subjects (id)
-        )
-    """)
-    
     conn.commit()
     conn.close()
-    print("Khởi tạo cơ sở dữ liệu SQLite thành công!")
+    print("Khởi tạo cơ sở dữ liệu thành công!")
 
 if __name__ == "__main__":
     init_db()
