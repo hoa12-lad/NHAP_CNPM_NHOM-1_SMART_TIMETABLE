@@ -1,30 +1,30 @@
-PRODUCT VISION – WEBSITE THUÊ VÀ MƯỢN ĐỒ
+PRODUCT VISION – PHẦN MỀM QUẢN LÝ THỜI KHÓA BIỂU
 
 1. Tầm nhìn sản phẩm
 
-Xây dựng một website kết nối những người có nhu cầu cho thuê, cho mượn đồ dùng với những người có nhu cầu thuê, mượn. Website giúp người dùng dễ dàng tìm kiếm, trao đổi và sử dụng các sản phẩm cần thiết mà không phải tốn nhiều chi phí mua mới.
+Xây dựng phần mềm quản lý thời khóa biểu hiện đại, tiện lợi và dễ sử dụng, giúp sinh viên và giáo viên dễ dàng tạo, xem, chỉnh sửa và quản lý lịch học, lịch dạy. Phần mềm hướng đến việc hạn chế tình trạng trùng lịch, tiết kiệm thời gian và nâng cao hiệu quả học tập, giảng dạy.
 
 2. Vấn đề cần giải quyết
 
-* Nhiều người có đồ dùng ít sử dụng, gây lãng phí.
-* Người có nhu cầu sử dụng đồ trong thời gian ngắn phải tốn chi phí mua mới.
-* Việc tìm kiếm người cho thuê hoặc cho mượn còn gặp nhiều khó khăn.
-* Chưa có nền tảng thuận tiện để quản lý hoạt động thuê và mượn đồ.
+* Việc quản lý lịch học và lịch dạy còn mất nhiều thời gian.
+* Dễ xảy ra tình trạng trùng lịch học hoặc lịch dạy.
+* Khó khăn trong việc cập nhật khi có thay đổi thời khóa biểu.
+* Sinh viên và giáo viên khó theo dõi lịch nếu thông tin không được tập trung.
 
 3. Đối tượng sử dụng
 
-* Người có đồ dùng muốn cho thuê hoặc cho mượn.
-* Người có nhu cầu thuê hoặc mượn đồ.
-* Quản trị viên quản lý hoạt động của website.
+* Sinh viên.
+* Giáo viên.
+* Người quản trị hệ thống.
 
 4. Mục tiêu sản phẩm
 
-* Tạo môi trường kết nối người cho thuê và người thuê.
-* Hỗ trợ đăng tải và tìm kiếm sản phẩm.
-* Quản lý yêu cầu thuê, mượn và trả đồ.
-* Tiết kiệm chi phí cho người sử dụng.
-* Hạn chế lãng phí đồ dùng.
+* Hỗ trợ tạo và quản lý thời khóa biểu.
+* Cho phép xem lịch học, lịch dạy theo ngày và tuần.
+* Hỗ trợ chỉnh sửa và xóa lịch.
+* Cảnh báo khi phát hiện trùng lịch.
+* Giúp người dùng quản lý thời gian hiệu quả.
 
 5. Định hướng phát triển
 
-Trong tương lai, website có thể phát triển thêm chức năng thanh toán trực tuyến, đánh giá người dùng, thông báo tự động và định vị sản phẩm gần khu vực của người thuê.
+Trong tương lai, phần mềm có thể bổ sung chức năng thông báo khi lịch thay đổi, đồng bộ với lịch cá nhân và hỗ trợ quản lý lịch học, lịch dạy trên điện thoại.
